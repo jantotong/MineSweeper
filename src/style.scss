@@ -1,0 +1,75 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  background-size: cover;
+  min-height: 700px;
+  background-image: url("image/background.jpg");
+  repeat: no-repeat;
+  font-family: sans-serif;
+}
+
+.clear {
+  clear: both;
+  content: "";
+}
+
+.game {
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+
+  .Dropdown {
+    position: absolute;
+    font-style: oblique;
+  }
+
+  .header {
+    margin-bottom: 20px;
+    background: #3484c9;
+    padding: 5px;
+    text-align: center;
+    color: #050505;
+    border-radius: 5px;
+
+    .info {
+      margin-top: 20px;
+    }
+  }
+
+  .cells {
+    padding-left: 20%;
+    position: relative;
+  }
+
+  @media (min-width: 500px) and (min-height: 500px) {
+    .cell {
+      background: #000000;
+      border: 1px solid #fff;
+      float: left;
+      line-height: 2.5em;
+      height: 2.5em;
+      text-align: center;
+      width: 2.5em;
+      cursor: pointer;
+      border-radius: 5px;
+      font-weight: 600;
+
+      &:active {
+        transform: translateY(4px);
+      }
+
+      &:hover {
+        background: #af0000;
+      }
+    }
+  }
+
+
+  .hidden {
+    background: rgb(187, 166, 15);
+  }
+}
